@@ -1,0 +1,33 @@
+﻿<Window x:Class="ddqlmain.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Dissolving Dream 梦醒时分 专用启动器" Height="300" Width="620" MaxHeight="300" MaxWidth="620" MinHeight="300" MinWidth="620" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="Button_Load" Content="读取存档" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Height="30" Width="150" Click="Button_Load_Click"/>
+        <Button x:Name="Button_Launch" Content="启动游戏" HorizontalAlignment="Left" Margin="231,229,0,0" VerticalAlignment="Top" Height="30" Width="150" Click="Button_Launch_Click"/>
+        <Button x:Name="Button_Setting" Content="更多设置" HorizontalAlignment="Left" Margin="452,229,0,0" VerticalAlignment="Top" Height="30" Width="150" Click="Button_Setting_Click"/>
+        <Grid HorizontalAlignment="Left" Height="29" Margin="10,195,0,0" VerticalAlignment="Top" Width="592">
+            <CheckBox x:Name="Set_SpeedControl" Content="战役调速" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Height="19"/>
+            <CheckBox x:Name="Set_Log" Content="生成日志" HorizontalAlignment="Left" Margin="119,5,0,0" VerticalAlignment="Top" Height="19"/>
+            <RadioButton x:Name="Diff_Easy" Content="简单" HorizontalAlignment="Left" Margin="399,5,0,0" VerticalAlignment="Top" GroupName="Difficulty"/>
+            <RadioButton x:Name="Diff_Medium" Content="普通" HorizontalAlignment="Left" Margin="469,5,0,0" VerticalAlignment="Top" GroupName="Difficulty"/>
+            <RadioButton x:Name="Diff_Hard" Content="困难" HorizontalAlignment="Left" Margin="539,5,0,0" VerticalAlignment="Top" GroupName="Difficulty" IsChecked="True"/>
+        </Grid>
+        <DataGrid x:Name="CampaignDataGrid" CanUserAddRows="False" SelectionMode="Single" CanUserSortColumns="False" HorizontalAlignment="Left" Height="180" Margin="7,10,0,0" VerticalAlignment="Top" Width="597" BorderBrush="DarkGray" BorderThickness="2" Background="{x:Null}" AutoGenerateColumns="False" CanUserReorderColumns="False" ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn CanUserResize="False" IsReadOnly="True" Header="场景代码" Width="0" Binding="{Binding SCENERY}" Visibility="Hidden"/>
+                <DataGridTextColumn CanUserResize="False" IsReadOnly="True" Header="任务编号" Width="195.5" Binding="{Binding ID}"/>
+                <DataGridTextColumn CanUserResize="False" IsReadOnly="True" Header="战役名称" Width="195.5" Binding="{Binding Name}"/>
+                <DataGridTextColumn CanUserResize="False" IsReadOnly="True" Header="玩家阵营" Width="195.5" Binding="{Binding Side}"/>
+            </DataGrid.Columns>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+    </Grid>
+</Window>
