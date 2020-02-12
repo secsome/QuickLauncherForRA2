@@ -16,7 +16,8 @@
             <RadioButton x:Name="Diff_Medium" Content="普通" HorizontalAlignment="Left" Margin="469,5,0,0" VerticalAlignment="Top" GroupName="Difficulty"/>
             <RadioButton x:Name="Diff_Hard" Content="困难" HorizontalAlignment="Left" Margin="539,5,0,0" VerticalAlignment="Top" GroupName="Difficulty" IsChecked="True"/>
         </Grid>
-        <DataGrid x:Name="CampaignDataGrid" CanUserAddRows="False" SelectionMode="Single" CanUserSortColumns="False" HorizontalAlignment="Left" Height="180" Margin="7,10,0,0" VerticalAlignment="Top" Width="597" BorderBrush="DarkGray" BorderThickness="2" Background="{x:Null}" AutoGenerateColumns="False" CanUserReorderColumns="False" ItemsSource="{Binding}">
+        <DataGrid x:Name="CampaignDataGrid" CanUserAddRows="False" SelectionMode="Single" CanUserSortColumns="False" HorizontalAlignment="Left" Height="180" Margin="7,10,0,0"
+                  VerticalAlignment="Top" Width="597" BorderBrush="DarkGray" BorderThickness="2" Background="{x:Null}" AutoGenerateColumns="False" CanUserReorderColumns="False" ItemsSource="{Binding}">
             <DataGrid.Columns>
                 <DataGridTextColumn CanUserResize="False" IsReadOnly="True" Header="场景代码" Width="0" Binding="{Binding SCENERY}" Visibility="Hidden"/>
                 <DataGridTextColumn CanUserResize="False" IsReadOnly="True" Header="任务编号" Width="195.5" Binding="{Binding ID}"/>

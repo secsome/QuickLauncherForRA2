@@ -4,11 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Dissolving Dream 梦醒时分 专用启动器 存档读取" Height="240" Width="560" MaxHeight="240" MaxWidth="560" MinHeight="240" MinWidth="560" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterOwner" BorderBrush="Black" BorderThickness="1.5">
+        Title="Dissolving Dream 梦醒时分 专用启动器 存档读取" Height="240" Width="560" MaxHeight="240" MaxWidth="560" MinHeight="240" MinWidth="560" ResizeMode="NoResize" WindowStyle="None"
+        AllowsTransparency="True" WindowStartupLocation="CenterOwner" BorderBrush="Black" BorderThickness="1.5">
     <Grid>
         <Button x:Name="Button_Back" Content="返回战役选择" HorizontalAlignment="Left" Margin="426,196,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Back_Click"/>
         <Button x:Name="Button_Load" Content="载入选定存档" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Load_Click"/>
-        <DataGrid x:Name="SavesDataGrid" CanUserAddRows="False" SelectionMode="Single" CanUserSortColumns="False" HorizontalAlignment="Left" Height="180" Margin="10,10,0,0" VerticalAlignment="Top" Width="536" Background="{x:Null}" BorderBrush="DarkGray" BorderThickness="2" AutoGenerateColumns="False" CanUserReorderColumns="False" ItemsSource="{Binding}">
+        <DataGrid x:Name="SavesDataGrid" CanUserAddRows="False" SelectionMode="Single" CanUserSortColumns="False" HorizontalAlignment="Left" Height="180" Margin="10,10,0,0" VerticalAlignment="Top"
+                  Width="536" Background="{x:Null}" BorderBrush="DarkGray" BorderThickness="2" AutoGenerateColumns="False" CanUserReorderColumns="False" ItemsSource="{Binding}">
             <DataGrid.Columns>
                 <DataGridTextColumn CanUserResize="False" IsReadOnly="True" Header="文件名称" Width="100" Binding="{Binding Name}"/>
                 <DataGridTextColumn CanUserResize="False" IsReadOnly="True" Header="存档名称" Width="250" Binding="{Binding UIName}"/>

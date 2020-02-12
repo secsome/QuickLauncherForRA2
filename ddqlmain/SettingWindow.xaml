@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Dissolving Dream 梦醒时分 专用启动器 更多设置" Height="240" Width="560" MaxHeight="240" MaxWidth="560" MinHeight="240" MinWidth="560" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterOwner" BorderBrush="Black" BorderThickness="1.5">
+        Title="Dissolving Dream 梦醒时分 专用启动器 更多设置" Height="240" Width="560" MaxHeight="240" MaxWidth="560" MinHeight="240" MinWidth="560" ResizeMode="NoResize" WindowStyle="None"
+        AllowsTransparency="True" WindowStartupLocation="CenterOwner" BorderBrush="Black" BorderThickness="1.5">
     <Grid>
         <Button x:Name="Button_Confirm" Content="保存设置" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Width="150" Height="35" Click="Button_Confirm_Click"/>
         <Button x:Name="Button_Cancel" Content="退出设置" HorizontalAlignment="Left" Margin="396,191,0,0" VerticalAlignment="Top" Width="150" Height="35" Click="Button_Cancel_Click"/>
@@ -21,11 +22,15 @@
         <Label Content="游戏内分辨率" HorizontalAlignment="Left" Margin="464,80,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="ComboBox_ScreenResolution" HorizontalAlignment="Left" Margin="420,117,0,0" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
         <Label x:Name="Info_Text" Content="" HorizontalAlignment="Left" Margin="165,10,0,0" VerticalAlignment="Top" Height="182" Width="226" BorderBrush="Black" BorderThickness="1" FontSize="8"/>
-        <RadioButton x:Name="ScreenResolution_Standard" Content="从标准分辨率中选择" HorizontalAlignment="Left" Margin="413,103,0,0" VerticalAlignment="Top" GroupName="ScreenResolution" Checked="ScreenResolution_Standard_Checked"/>
-        <RadioButton x:Name="ScreenResolution_Custom" Content="自定义分辨率" HorizontalAlignment="Left" Margin="413,139,0,0" VerticalAlignment="Top" GroupName="ScreenResolution" Checked="ScreenResolution_Custom_Checked"/>
+        <RadioButton x:Name="ScreenResolution_Standard" Content="从标准分辨率中选择" HorizontalAlignment="Left" Margin="413,103,0,0" VerticalAlignment="Top" GroupName="ScreenResolution"
+                     Checked="ScreenResolution_Standard_Checked"/>
+        <RadioButton x:Name="ScreenResolution_Custom" Content="自定义分辨率" HorizontalAlignment="Left" Margin="413,139,0,0" VerticalAlignment="Top" GroupName="ScreenResolution"
+                     Checked="ScreenResolution_Custom_Checked"/>
         <Label x:Name="ScreenResolution_Custom_X" Content="X" HorizontalAlignment="Left" Margin="464,157,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="ScreenResolution_Custom_Width" MaxLength="4" PreviewTextInput="TextBoxNumberOnly" InputMethod.IsInputMethodEnabled="False" HorizontalAlignment="Left" Height="23" Margin="404,159,0,0" TextWrapping="Wrap" Text="800" VerticalAlignment="Top" Width="60"/>
-        <TextBox x:Name="ScreenResolution_Custom_Height" MaxLength="4" PreviewTextInput="TextBoxNumberOnly" InputMethod.IsInputMethodEnabled="False" HorizontalAlignment="Left" Height="23" Margin="482,158,0,0" TextWrapping="Wrap" Text="600" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="ScreenResolution_Custom_Width" MaxLength="4" PreviewTextInput="TextBoxNumberOnly" InputMethod.IsInputMethodEnabled="False" HorizontalAlignment="Left" Height="23"
+                 Margin="404,159,0,0" TextWrapping="Wrap" Text="800" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="ScreenResolution_Custom_Height" MaxLength="4" PreviewTextInput="TextBoxNumberOnly" InputMethod.IsInputMethodEnabled="False" HorizontalAlignment="Left" Height="23"
+                 Margin="482,158,0,0" TextWrapping="Wrap" Text="600" VerticalAlignment="Top" Width="60"/>
 
     </Grid>
 </Window>
